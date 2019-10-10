@@ -148,7 +148,7 @@ final class BazelQueryInfoExtractor: QueuedLogging {
     }
 
     var arguments = [
-        "--max_idle_secs=60",
+        "-s--max_idle_secs=60",
     ]
     arguments.append(contentsOf: bazelUniversalFlags.startup)
     arguments.append("query")
